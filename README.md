@@ -1,8 +1,9 @@
 ## Setup Streaming Services
 
-1: I really appreciate the orgignal work on this Streaming Service setup, but I fail to understand the use of the worst two browsers for privacy, both do not support Ublock Origin and both are massive data horders, so I forked this project to change the browsers used to Brave instead.
+1: I really appreciate the original work on this Streaming Service setup, but I fail to understand the use of the worst two browsers for privacy, both do not support Ublock Origin and both are massive data hoarders, so I forked this project to change the browsers used to Brave instead.
 
-2: I'm unsure if all services will work as intended, as many I dont use, but the ones I do use are working perfectly, you may need to open Brave and set it up how you like it first, maybe install Sponser Block and De-arrow, I will need to work on this script still as I dont think the apps are opening in their own seperate profile, which I highly recommend.
+2: I'm unsure if all services will work as intended, as many I don’t use, but the ones I do use are working perfectly, you may need to open Brave and set it up how you like it first, maybe install Sponsor Block and De-arrow, I will need to work on this script still as I don’t think the apps are opening in their own separate profile, which I highly recommend.
+
 
 This script will provide a UI to select any URLs found in the `data/links.index` source file, and will create desktop icons and add them to Steam.  It is compatible with all devices running SteamOS.
 
