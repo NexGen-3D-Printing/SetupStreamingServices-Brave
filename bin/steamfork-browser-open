@@ -7,21 +7,21 @@ URL=${URL:-${2}}
 
 if [ -z "${BROWSER}" ]
 then
-  BROWSER="com.google.Chrome"
+  BROWSER="com.brave.Browser"
 fi
 
 BROWSER_INSTALLED=$(flatpak info ${BROWSER} >/dev/null 2>&1)
 if (( $? > 0 ))
 then
 	case ${BROWSER} in
-		com.google.Chrome)
-			BROWSER="Google Chrome"
+		com.brave.Browser)
+			BROWSER="Brave"
 			;;
-		com.microsoft.Edge)
-			BROWSER="Microsoft Edge"
+		com.brave.Browser)
+			BROWSER="Brave"
 			;;
 	esac
-	zenity --info --text="Please switch to desktop mode and install Microsoft Edge from the discovery software center."
+	zenity --info --text="Please switch to desktop mode and install Brave from the discovery software center."
 	exit 1
 fi
 
