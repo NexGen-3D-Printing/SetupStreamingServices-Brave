@@ -115,4 +115,4 @@ Return to your application screen, and use touch input.
 ### Uninstalling
 1. Delete the launchers from Steam.
 2. Remove the related .desktop files from ~/Applications.
-3. Delete steamfork-browser-open from ~/bin.
+3. Delete steam-browser-open from ~/bin.
