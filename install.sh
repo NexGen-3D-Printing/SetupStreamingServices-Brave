@@ -22,10 +22,10 @@ then
 fi
 
 echo "Fetching source data..."
-curl -Lo "${SOURCE_FILE}" "https://github.com/SteamFork/SetupStreamingServices/raw/main/data/links.index"
+curl -Lo "${SOURCE_FILE}" "https://github.com/NexGen-3D-Printing/SetupStreamingServices-Brave/raw/main/data/links.index"
 
 echo "Fetching browser script..."
-curl -Lo ${SCRIPT_COMMAND} "https://github.com/SteamFork/SetupStreamingServices/raw/main/bin/steamfork-browser-open"
+curl -Lo ${SCRIPT_COMMAND} "https://github.com/NexGen-3D-Printing/SetupStreamingServices-Brave/raw/main/bin/steamfork-browser-open"
 chmod 0755 ${SCRIPT_COMMAND}
 
 declare -a allURLs=()
