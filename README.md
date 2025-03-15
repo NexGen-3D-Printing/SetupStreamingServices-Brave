@@ -9,7 +9,7 @@ This script will provide a UI to select any URLs found in the `data/links.index`
 
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/SteamFork/SetupStreamingServices/main/.images/20240709.jpg"/></td>
+    <td><img src="https://raw.githubusercontent.com/NexGen-3D-Printing/SetupStreamingServices-Brave/main/.images/20240709.jpg"/></td>
   </tr>
 </table>
 
@@ -93,7 +93,7 @@ The list below is based on the index found in the source tree and may not contai
 Before running this script, be sure to switch to desktop mode and install Google Chrome from the discovery software center.  Once completed, open `konsole`, and paste the installation script to get started.
 
 ```
-curl -L https://github.com/SteamFork/SetupStreamingServices/raw/main/install.sh | bash
+curl -L https://github.com/NexGen-3D-Printing/SetupStreamingServices-Brave/raw/main/install.sh | bash
 ```
 
 Return to Gamescope, and use the [SteamGridDB](https://github.com/SteamGridDB/decky-steamgriddb) Decky plugin to add images to the new streaming services launchers.
