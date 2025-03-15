@@ -6,7 +6,7 @@ WORK_DIR="$(dirname $(realpath "${0}"))"
 SOURCE_FILE="${WORK_DIR}/links.index"
 APPS_PATH="${HOME}/Applications"
 SCRIPT_PATH="${HOME}/bin"
-SCRIPT_COMMAND="${SCRIPT_PATH}/steamfork-browser-open"
+SCRIPT_COMMAND="${SCRIPT_PATH}/steam-browser-open"
 
 for DIR in "${APPS_PATH}" "${SCRIPT_PATH}"
 do
@@ -25,7 +25,7 @@ echo "Fetching source data..."
 curl -Lo "${SOURCE_FILE}" "https://github.com/NexGen-3D-Printing/SetupStreamingServices-Brave/raw/main/data/links.index"
 
 echo "Fetching browser script..."
-curl -Lo ${SCRIPT_COMMAND} "https://github.com/NexGen-3D-Printing/SetupStreamingServices-Brave/raw/main/bin/steamfork-browser-open"
+curl -Lo ${SCRIPT_COMMAND} "https://github.com/NexGen-3D-Printing/SetupStreamingServices-Brave/raw/main/bin/steam-browser-open"
 chmod 0755 ${SCRIPT_COMMAND}
 
 declare -a allURLs=()
