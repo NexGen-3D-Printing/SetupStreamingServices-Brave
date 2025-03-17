@@ -32,10 +32,10 @@ unset LD_PRELOAD
     --arch=x86_64 \
     --branch=stable \
     --file-forwarding \
-    "${BROWSER}" \   
-    --profile-directory="WEB_APPS" \
+    "${BROWSER}" \
     @@u \
     @@ \
+    --profile-directory="WEB_APPS" \
     --window-size="1024,640" \
     --force-device-scale-factor="1.25" \
     --device-scale-factor="1.25" \
