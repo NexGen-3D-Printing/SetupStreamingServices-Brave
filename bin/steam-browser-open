@@ -41,7 +41,7 @@ fi
 # Unset LD_PRELOAD to avoid conflicts
 unset LD_PRELOAD
 
-# Launch Brave with the WEB_APPS profile
+# Launch Brave with the WEB_APPS profile and disable the sidebar
 /usr/bin/flatpak run \
     --arch=x86_64 \
     --branch=stable \
@@ -53,5 +53,6 @@ unset LD_PRELOAD
     --force-device-scale-factor="1.25" \
     --device-scale-factor="1.25" \
     --kiosk \
+    --disable-features=BraveSidebar \
     --profile-directory="${PROFILE_NAME}" \
     "${URL}"
