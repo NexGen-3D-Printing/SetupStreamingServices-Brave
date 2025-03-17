@@ -29,6 +29,11 @@ PROFILE_NAME="WEB_APPS"
 PROFILE_DIR="${HOME}/.var/app/com.brave.Browser/config/BraveSoftware/Brave-Browser/${PROFILE_NAME}"
 
 if [ ! -d "${PROFILE_DIR}" ]; then
+    echo "Launching and closing Brave to initialize profile directory..."
+    /usr/bin/flatpak run "${BROWSER}" --no-first-run &
+    sleep 5  # Allow time for the profile to be created
+    pkill -f "${BROWSER}"
+
     echo "Creating new Brave browser profile: ${PROFILE_NAME}"
     mkdir -p "${PROFILE_DIR}"
 fi
@@ -50,4 +55,3 @@ unset LD_PRELOAD
     --kiosk \
     --profile-directory="${PROFILE_NAME}" \
     "${URL}"
-
