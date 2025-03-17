@@ -95,4 +95,4 @@ sleep 5
 
 # Close Brave Browser
 echo "Closing Brave Browser..."
-pkill -f "flatpak run com.brave.Browser"
+pkill -f "flatpak run com.brave.Browser --profile-directory=WEB_APP"
