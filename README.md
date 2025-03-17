@@ -100,7 +100,7 @@ The list below is based on the index found in the source tree and may not contai
 ```
 curl -L https://github.com/NexGen-3D-Printing/SetupStreamingServices-Brave/raw/main/install.sh | bash
 ```
-6. Once completed, launch Brave again, you will see a profile selection window with a new profile called "Your Brave" select this one and Brave will launch.
+6. Once completed, launch Brave again, you will see a profile selection window with a new profile called "Your Brave" select this one and Brave will launch (You can rename this to WEB_APPS or similar if like)
 7. Go to the Hamburger menu and "Off" for the SideBar menu, once done, you can close Brave again
 8. Return to Gamescope, and use the [SteamGridDB](https://github.com/SteamGridDB/decky-steamgriddb) Decky plugin to add images to the new streaming services launchers.
 
