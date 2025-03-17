@@ -1,8 +1,14 @@
 ## Setup Streaming Services
 
-1: I really appreciate the original work on this Streaming Service setup, but I fail to understand the use of the worst two browsers for privacy, both do not support Ublock Origin and both are massive data hoarders, so I forked this project to change the browsers used to Brave instead.
+1: I really appreciate the original work on this Streaming Service setup, but I fail to understand the use of the worst two browsers for privacy, both do not support Ublock Origin and both are massive data hoarders, so I forked this project to change the browser to Brave instead.
 
-2: I'm unsure if all services will work as intended, as many I don’t use, but the ones I do use are working perfectly, you may need to open Brave and set it up how you like it first, maybe install Sponsor Block and De-arrow, I will need to work on this script still as I don’t think the apps are opening in their own separate profile, which I highly recommend.
+2: I'm unsure if all services will work as intended, as many I don’t use, but the ones I do use are working perfectly.
+
+To Do List:
+
+1. Create Uninstall Script
+2. Create Seperate Install for 1080p and 1440p Screens (Non Steam Deck Consoles)
+3. Have the SideBar disables in Brave automatically on install
 
 
 This script will provide a UI to select any URLs found in the `data/links.index` source file, and will create desktop icons and add them to Steam.  It is compatible with all devices running SteamOS.
@@ -117,6 +123,12 @@ After opening a shortcut, enable native touch support to improve the user experi
 * Select `Touchscreen Native Support`.
 
 Return to your application screen, and use touch input.
+
+### Home Assitant Configuration
+
+I have configured the Home Assistant App to use http://homeassistant.local:8123 but this may not work, so you will need to edit the .desktop file with your specific local IP address.
+
+* The .desktop file is located in ~/Applications/StreamingServices and as an example, change the launch argument from "com.brave.Browser http://homeassistant.local:8123" to "com.brave.Browser http://192.168.0.123:8123"
 
 ### Uninstalling (Looking to make a simple script for this)
 1. Delete the launchers from Steam.
