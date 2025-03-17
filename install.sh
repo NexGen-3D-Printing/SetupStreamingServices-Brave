@@ -4,8 +4,8 @@
 
 WORK_DIR="$(dirname $(realpath "${0}"))"
 SOURCE_FILE="${WORK_DIR}/links.index"
-APPS_PATH="${HOME}/Applications"
-SCRIPT_PATH="${HOME}/bin"
+APPS_PATH="${HOME}/Applications/StreamingServices"
+SCRIPT_PATH="${HOME}/Applications/StreamingServices"
 SCRIPT_COMMAND="${SCRIPT_PATH}/steam-browser-open"
 
 for DIR in "${APPS_PATH}" "${SCRIPT_PATH}"
