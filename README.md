@@ -100,9 +100,8 @@ The list below is based on the index found in the source tree and may not contai
 ```
 curl -L https://github.com/NexGen-3D-Printing/SetupStreamingServices-Brave/raw/main/install.sh | bash
 ```
-6. Once completed, launch Brave again, you will see a profile selection window with a new profile called "Your Brave" select this one and Brave will launch (You can rename this to WEB_APPS or similar if like)
-7. Go to the Hamburger menu and "Off" for the SideBar menu, once done, you can close Brave again
-8. Return to Gamescope, and use the [SteamGridDB](https://github.com/SteamGridDB/decky-steamgriddb) Decky plugin to add images to the new streaming services launchers.
+6. Once completed, Brave will automatically launch into the new profile, you now need to disable the SideBar: Go to the Hamburger menu and select "Off" for the SideBar menu, once done, you can close Brave again.
+7. You can now return to Gamescope (Game Mode/Big Picture Mode), and use the [SteamGridDB](https://github.com/SteamGridDB/decky-steamgriddb) Decky plugin to add images to the new streaming services launchers.
 
 ### Enabling Native Touch Support
 
@@ -119,7 +118,6 @@ After opening a shortcut, enable native touch support to improve the user experi
 
 Return to your application screen, and use touch input.
 
-### Uninstalling
+### Uninstalling (Looking to make a simple script for this)
 1. Delete the launchers from Steam.
-2. Remove the related .desktop files from ~/Applications.
-3. Delete steam-browser-open from ~/bin.
+2. Delete the follwing folder: ~/Applications/StreamingServices. (Home/Applications/StreamingServices)
