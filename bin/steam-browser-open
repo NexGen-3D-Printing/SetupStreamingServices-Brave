@@ -5,11 +5,13 @@
 BROWSER=${1}
 URL=${URL:-${2}}
 
+# Set default browser to Brave if none is specified
 if [ -z "${BROWSER}" ]
 then
   BROWSER="com.brave.Browser"
 fi
 
+# Check if the browser is installed
 BROWSER_INSTALLED=$(flatpak info ${BROWSER} >/dev/null 2>&1)
 if (( $? > 0 ))
 then
@@ -22,17 +24,30 @@ then
 	exit 1
 fi
 
+# Create a new Brave browser profile named WEB_APPS if it doesn't exist
+PROFILE_NAME="WEB_APPS"
+PROFILE_DIR="${HOME}/.var/app/com.brave.Browser/config/BraveSoftware/Brave-Browser/${PROFILE_NAME}"
+
+if [ ! -d "${PROFILE_DIR}" ]; then
+    echo "Creating new Brave browser profile: ${PROFILE_NAME}"
+    mkdir -p "${PROFILE_DIR}"
+fi
+
+# Unset LD_PRELOAD to avoid conflicts
 unset LD_PRELOAD
 
+# Launch Brave with the WEB_APPS profile
 /usr/bin/flatpak run \
-	--arch=x86_64 \
-	--branch=stable \
-	--file-forwarding \
-	"${BROWSER}" \
-	@@u \
-	@@ \
-	--window-size="1024,640" \
-	--force-device-scale-factor="1.25" \
-	--device-scale-factor="1.25" \
-	--kiosk \
-	"${URL}"
+    --arch=x86_64 \
+    --branch=stable \
+    --file-forwarding \
+    "${BROWSER}" \
+    @@u \
+    @@ \
+    --window-size="1024,640" \
+    --force-device-scale-factor="1.25" \
+    --device-scale-factor="1.25" \
+    --kiosk \
+    --profile-directory="${PROFILE_NAME}" \
+    "${URL}"
+
