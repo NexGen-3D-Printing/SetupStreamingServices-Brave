@@ -17,9 +17,6 @@ then
 		com.brave.Browser)
 			BROWSER="Brave"
 			;;
-		com.brave.Browser)
-			BROWSER="Brave"
-			;;
 	esac
 	zenity --info --text="Please switch to desktop mode and install Brave from the discovery software center."
 	exit 1
