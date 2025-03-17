@@ -8,7 +8,7 @@ To Do List:
 
 1. Create Uninstall Script
 2. Create Seperate Install for 1080p and 1440p Screens (Non Steam Deck Consoles)
-3. Have the SideBar disables in Brave automatically on install
+3. Have the SideBar disable in Brave automatically on install
 
 
 This script will provide a UI to select any URLs found in the `data/links.index` source file, and will create desktop icons and add them to Steam.  It is compatible with all devices running SteamOS.
