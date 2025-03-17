@@ -90,15 +90,22 @@ The list below is based on the index found in the source tree and may not contai
 * [WebRcade](https://play.webrcade.com/)
 
 ### Installation
-Before running this script, be sure to switch to desktop mode and install Google Chrome from the discovery software center.  Once completed, open `konsole`, and paste the installation script to get started.
+
+1. Switch to desktop mode
+2. Open the Discovery App
+3. Install Brave Browser
+4. Open then close Brave (This will create your main profile, usualy will be called "Work" but you can rename this later if you want)
+5. Paste the following into your Konsole
 
 ```
 curl -L https://github.com/NexGen-3D-Printing/SetupStreamingServices-Brave/raw/main/install.sh | bash
 ```
-
-Return to Gamescope, and use the [SteamGridDB](https://github.com/SteamGridDB/decky-steamgriddb) Decky plugin to add images to the new streaming services launchers.
+6. Once completed, launch Brave again, you will see a profile selection window with a new profile called "Your Brave" select this one and Brave will launch.
+7. Go to the Hamburger menu and "Off" for the SideBar menu, once done, you can close Brave again
+8. Return to Gamescope, and use the [SteamGridDB](https://github.com/SteamGridDB/decky-steamgriddb) Decky plugin to add images to the new streaming services launchers.
 
 ### Enabling Native Touch Support
+
 After opening a shortcut, enable native touch support to improve the user experience.
 
 * Open controller settings for the platform.
