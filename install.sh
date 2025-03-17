@@ -84,9 +84,8 @@ EOF
                 echo "Not adding entry: ${NAME}, as it already exists..."
         fi
 	unset NAME URL
+        flatpak run com.brave.Browser --profile-directory=WEB_APPS
 done
 
-# New addition: Launch and close Brave with the WEB_APPS profile
-echo "Launching Brave Browser with WEB_APPS profile..."
-flatpak run com.brave.Browser --profile-directory=WEB_APPS
+
 
