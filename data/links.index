@@ -1,4 +1,8 @@
 ABC IView|https://iview.abc.net.au|com.brave.Browser
+SBS Ondemand|https://www.sbs.com.au/ondemand/|com.brave.Browser
+7plus|https://7plus.com.au/|com.brave.Browser
+9now|https://www.9now.com.au/|com.brave.Browser
+10play|https://10play.com.au/|com.brave.Browser
 AirGPU|https://app.airgpu.com|com.brave.Browser
 Amazon Luna|https://luna.amazon.com/|com.brave.Browser
 Amazon Prime Video|https://www.amazon.com/video|com.brave.Browser
@@ -30,7 +34,7 @@ GBNews Live|https://www.gbnews.com/watch/live|com.brave.Browser
 GlobalComix|https://globalcomix.com/|com.brave.Browser
 Google Play Books|https://play.google.com/store/books|com.brave.Browser
 HBO Max|https://www.max.com/|com.brave.Browser
-Home Assistant|https://demo.home-assistant.io/|com.brave.Browser
+Home Assistant|http://homeassistant.local:8123/|com.brave.Browser
 Hulu|https://www.hulu.com/|com.brave.Browser
 Internet Archive Movies|https://archive.org/details/movies|com.brave.Browser
 ITV X|https://www.itv.com/|com.brave.Browser
