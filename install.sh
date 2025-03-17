@@ -88,7 +88,7 @@ done
 
 # New addition: Launch and close Brave with the WEB_APPS profile
 echo "Launching Brave Browser with WEB_APPS profile..."
-flatpak run --profile=WEB_APPS com.brave.Browser &
+flatpak run com.brave.Browser --profile-directory="WEB_APPS" &
 
 # Optional: Wait for a moment (e.g., 10 seconds) or a specific condition to close the browser
 sleep 5
