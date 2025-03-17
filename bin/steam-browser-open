@@ -33,11 +33,11 @@ unset LD_PRELOAD
     --branch=stable \
     --file-forwarding \
     "${BROWSER}" \   
+    --profile-directory="WEB_APPS" \
     @@u \
     @@ \
     --window-size="1024,640" \
     --force-device-scale-factor="1.25" \
     --device-scale-factor="1.25" \
     --kiosk \
-    --profile-directory="WEB_APPS" \
     "${URL}"
