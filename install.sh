@@ -84,8 +84,8 @@ EOF
                 echo "Not adding entry: ${NAME}, as it already exists..."
         fi
 	unset NAME URL
-        flatpak run com.brave.Browser --profile-directory=WEB_APPS
 done
 
+flatpak run com.brave.Browser --profile-directory=WEB_APPS
 
 
